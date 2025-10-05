@@ -1,0 +1,239 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2E073F, #7A1CAC, #AD49E1);
+  color: #EBD3F8;
+  /* font-family: "Poppins", sans-serif; */
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.camera-box {
+  width: 60px;
+  height: 60px;
+  background: #AD49E1;
+  /* box-shadow: 4px 4px 10px #2E073F, -4px -4px 10px #EBD3F8; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.camera-box:hover {
+  transform: scale(1.05);
+}
+.camera-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* ===== BENTO GRID ===== */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.bento-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  box-shadow: inset 4px 4px 8px #2E073F, inset -4px -4px 8px rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 60px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  /* transform: translateY(-5px); */
+  /* box-shadow: 8px 8px 15px rgba(46, 7, 63, 0.4), -8px -8px 15px rgba(173, 73, 225, 0.3); */
+}
+
+.bento-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bento-card p {
+  font-size: 14px;
+  color: #EBD3F8;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  background: linear-gradient(145deg, #7A1CAC, #AD49E1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(145deg, #AD49E1, #7A1CAC);
+}
+
+/* ===== GRAPH SECTION ===== */
+.graph-section {
+  background: rgba(255, 25, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: inset 4px 4px 10px #2E073F, inset -4px -4px 10px rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+.graph-section canvas {
+  width: 100%;
+}
+
+/* ===== STREAK SECTION ===== */
+.streak-box {
+  position: absolute;
+  top: 42px;
+  right: 150px;
+  background: linear-gradient(145deg, #7A1CAC, #AD49E1);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px #2E073F, -4px -4px 10px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* =====Day===== */
+.day {
+  font-size: 18px;
+  margin: 4px;
+}
+
+.streak-box:hover {
+  transform: scale(1.05);
+}
+
+/* ===== MINI CALENDAR ===== */
+.calendar-popup {
+  /* position: absolute; */
+  /* top: 10px; */
+  bottom: 60px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.12);
+  /* backdrop-filter: blur(10px); */
+  border-radius: 15px;
+  padding: 20px;
+  width: 270px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.calendar-popup h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #EBD3F8;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendar-day {
+  background: rgba(255, 255, 255, 0.15);
+  color: #EBD3F8;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 6px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.calendar-day.active-day {
+  background: linear-gradient(145deg, #7A1CAC, #AD49E1);
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== DAILY TASK DETAILS ===== */
+.task-details {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: inset 4px 4px 8px #2E073F, inset -4px -4px 8px rgba(255, 255, 255, 0.15);
+}
+
+.task-details h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #EBD3F8;
+  text-align: center;
+}
+
+.task-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.task-box {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+  box-shadow: inset 3px 3px 6px #2E073F, inset -3px -3px 6px rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.task-box:hover {
+  transform: scale(1.05);
+  /* box-shadow: 6px 6px 12px rgba(46, 7, 63, 0.4), -6px -6px 12px rgba(173, 73, 225, 0.3); */
+}
+
+.task-box h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #EBD3F8;
+}
+
+.task-box p {
+  font-size: 15px;
+  color: #EBD3F8;
+}
+
+.task-box span {
+  font-weight: 700;
+  color: #CBA6F7;
+}
+
