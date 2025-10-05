@@ -4,8 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #2E073F, #7A1CAC, #AD49E1);
-  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(135deg, #2E073F, #7A1CAC, #AD49E1); */
+  background: url('https://i.pinimg.com/736x/92/dc/9b/92dc9bd242de50a520efd043b39424e4.jpg') no-repeat center center/cover;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 /* Main form box */
@@ -17,13 +18,14 @@
   padding: 40px 50px;
   border-radius: 20px;
   width: 380px;
-  box-shadow: 0 0 20px rgba(173, 73, 225, 0.3);
+  /* box-shadow: 0 0 20px rgba(173, 73, 225, 0.3); */
   text-align: center;
 }
 
 /* Title */
 .auth-box h2 {
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 25px;
   color: #EBD3F8;
 }

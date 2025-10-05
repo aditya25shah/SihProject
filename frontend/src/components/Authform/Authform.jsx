@@ -44,7 +44,7 @@ export default function AuthForm() {
   return (
     <div className="auth-container">
       <div className="auth-box">
-        <h2>{isLogin ? "Welcome Back 👋" : "Create Account ✨"}</h2>
+        <h2>{isLogin ? "LOGIN" : "SIGNUP"}</h2>
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="form-group">
