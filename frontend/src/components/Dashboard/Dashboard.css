@@ -60,11 +60,6 @@
   overflow: hidden;
 }
 
-.bento-card:hover {
-  /* transform: translateY(-5px); */
-  /* box-shadow: 8px 8px 15px rgba(46, 7, 63, 0.4), -8px -8px 15px rgba(173, 73, 225, 0.3); */
-}
-
 .bento-card h2 {
   font-size: 20px;
   margin-bottom: 10px;
