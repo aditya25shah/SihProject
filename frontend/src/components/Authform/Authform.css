@@ -1,0 +1,105 @@
+/* Background setup */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2E073F, #7A1CAC, #AD49E1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Main form box */
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #EBD3F8;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 380px;
+  box-shadow: 0 0 20px rgba(173, 73, 225, 0.3);
+  text-align: center;
+}
+
+/* Title */
+.auth-box h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #EBD3F8;
+}
+
+/* Input fields */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #EBD3F8;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input::placeholder {
+  color: #d3b5ef;
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #EBD3F8;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(to right, #7A1CAC, #AD49E1);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #AD49E1, #7A1CAC);
+  transform: translateY(-2px);
+}
+
+/* Toggle text and button */
+.toggle-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #EBD3F8;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #EBD3F8;
+  font-weight: 600;
+  margin-left: 6px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.toggle-btn:hover {
+  color: #fff;
+}
