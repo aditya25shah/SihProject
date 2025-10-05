@@ -24,7 +24,7 @@ Chart.register(
 
 export default function Dashboard() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const [streakDay] = useState(3); // ✅ no warning now
+  const [streakDay] = useState(14); // ✅ no warning now
 
 
   const chartRef = useRef(null);
